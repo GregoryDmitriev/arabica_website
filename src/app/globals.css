@@ -1,3 +1,5 @@
+@import "node_modules/locomotive-scroll/dist/locomotive-scroll";
+
 html,
 body,
 * {
@@ -7,7 +9,7 @@ body,
 }
 
 :root {
-  --backgroundColor: #292929;
+  --backgroundColor: #282829;
   --primaryColor: #0aa1ff;
   --primaryTextColor: #e6e6e6;
 
@@ -17,7 +19,7 @@ body,
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--backgroundColor);
 }
 
@@ -53,7 +55,7 @@ h2 {
 
 .hero__header h2 span {
   font-size: 50px;
-  color: red;
+  color: #ff0000;
   position: relative;
   left: -20px;
 }
@@ -88,8 +90,12 @@ h2 {
   mix-blend-mode: multiply;
 }
 
-.spacer {
-  height: 70vh;
+.wave__header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  fill: #282829;
+  bottom: 0;
 }
 
 .scroll-section-outer {
@@ -110,19 +116,109 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
 }
 
 .scroll-section h3 {
   color: var(--primaryTextColor);
   letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
+  font-size: 50px;
   text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.scroll-section p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.scroll-section span {
+  color: #ff0000;
+}
+.scroll-section video {
+  width: 500px;
+}
+
+.scroll-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
 }
 
 .reveal {
-  background: var(--backgroundColor);
+  margin-top: 100px;
+  background: url("/images/coffee-beans-4_00x.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.wave__reveal-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  height: 184%;
+  width: 100%;
+  fill: #282829;
+}
+
+.wave__reveal g {
+  transition: transform 0.3s;
+  transform-origin: center center;
+}
+
+.reveal-inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
   padding-left: 30%;
   padding-right: 10%;
+  position: relative;
+  z-index:1;
+}
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  top: 432px;
+  left: -414px;
+  width: 1650px;
+  height: 825px;
+  border-bottom-right-radius: 825px;
+  border-bottom-left-radius: 825px;
+  border: 0.5px solid #515153;
+  transform: rotate(-90deg);
+}
+
+.earth svg {
+  width: 1000px;
+  height: 1000px;
+}
+
+.earth__c svg {
+}
+
+/* .earth__element {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  transform-origin: bottom center;
+  offset-path: path('M4025 9110 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z');
+  offset-distance: 10%;
+  animation: moveInCircle 10s linear infinite;
+} */
+
+@keyframes moveInCircle {
+  0% {
+    offset-distance: 0%;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    offset-distance: 100%;
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
 }
 
 .reveal-text {
@@ -133,16 +229,6 @@ h2 {
   filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
 }
 
-.spacing-small {
-  height: 50vh;
-}
-
-@media screen and (max-width: 500px) {
-  .reveal {
-    padding-left: 10px;
-  }
-}
-
 .footer {
   height: 100vh;
   display: flex;
@@ -151,6 +237,6 @@ h2 {
 }
 
 .footer span {
-  font-size: var(--headlineBig);
-  color: var(--primaryTextColor);
+  font-size: 14px;
+  color: #baa375;
 }
