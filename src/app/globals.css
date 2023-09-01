@@ -6,6 +6,7 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 :root {
@@ -27,6 +28,30 @@ h1,
 h2 {
   color: #ffffff;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+}
+
 
 .hero__header {
   height: 100vh;
@@ -148,7 +173,7 @@ h2 {
 
 .reveal {
   margin-top: 100px;
-  background: url("/images/coffee-beans-4_00x.webp");
+  background: url("/images/coffee-beans-4K.webp");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -172,7 +197,7 @@ h2 {
   padding-left: 30%;
   padding-right: 10%;
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
 
 .earth {
@@ -186,36 +211,6 @@ h2 {
   border-bottom-left-radius: 825px;
   border: 0.5px solid #515153;
   transform: rotate(-90deg);
-}
-
-.earth svg {
-  width: 1000px;
-  height: 1000px;
-}
-
-.earth__c svg {
-}
-
-/* .earth__element {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-  position: absolute;
-  transform-origin: bottom center;
-  offset-path: path('M4025 9110 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z');
-  offset-distance: 10%;
-  animation: moveInCircle 10s linear infinite;
-} */
-
-@keyframes moveInCircle {
-  0% {
-    offset-distance: 0%;
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    offset-distance: 100%;
-    transform: translateX(-50%) translateY(-50%) rotate(180deg);
-  }
 }
 
 .reveal-text {

@@ -1,0 +1,180 @@
+.hero__header {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__header h1 {
+  font-size: 400px;
+  color: var(--primaryTextColor);
+}
+
+.hero__header h2 {
+  letter-spacing: var(--headlineSmall);
+  font-size: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 100;
+  top: 170px;
+  left: 160px;
+}
+
+.hero__header h2 span {
+  font-size: 50px;
+  color: #ff0000;
+  position: relative;
+  left: -20px;
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-copy {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 48.4vw;
+  margin-left: -2vw;
+  line-height: 50vw;
+  background-color: var(--backgroundColor);
+  user-select: none;
+  mix-blend-mode: multiply;
+}
+
+.wave__header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  fill: #282829;
+  bottom: 0;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.scroll-section p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.scroll-section span {
+  color: #ff0000;
+}
+.scroll-section video {
+  width: 500px;
+}
+
+.scroll-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.reveal {
+  margin-top: 100px;
+  background: url("/images/coffee-beans-4K.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.wave__reveal-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  fill: #282829;
+}
+
+.wave__reveal g {
+  transition: transform 0.3s;
+  transform-origin: center center;
+}
+
+.reveal-inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 30%;
+  padding-right: 10%;
+  position: relative;
+  z-index:1;
+}
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  top: 432px;
+  left: -414px;
+  width: 1650px;
+  height: 825px;
+  border-bottom-right-radius: 825px;
+  border-bottom-left-radius: 825px;
+  border: 0.5px solid #515153;
+  transform: rotate(-90deg);
+}
+
+
+.reveal-text {
+  font-weight: 800;
+  font-size: var(--headlineBig);
+  line-height: var(--headlineBig);
+  color: var(--backgroundColor);
+  filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
+}
+
+.footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #baa375;
+}

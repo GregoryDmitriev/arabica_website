@@ -42,7 +42,12 @@ function ScrollSection() {
             <div className="scroll-section-text">
               <h3>Origin</h3>
               <p>
-                <span>Arabica</span> coffee was first discovered in the Ethiopia region of Africa. According to legend, a shepherd named <span>Kaldi </span>saw his goats become more alert after eating berries from a coffee bush. This became the starting point for the study and use of coffee beans.
+                <span className="view">Arabica </span>
+                coffee was first discovered in the Ethiopia region of
+                Africa.According to legend, a shepherd named <span>Kaldi </span>
+                saw his goats become more alert after eating berries from a
+                coffee bush. This became the starting point for the study and
+                use of coffee beans.
               </p>
             </div>
             <video src="/herdsman.mp4" loop autoPlay muted></video>
@@ -51,10 +56,10 @@ function ScrollSection() {
             <div className="scroll-section-text">
               <h3>Distribution centers</h3>
               <p>
-                <span>Arabica</span> coffee was first grown in Arabia, and then
-                it began to be grown in other regions, such as Egypt, Yemen and
-                Turkey. In Yemen, for example, the first coffee plantations
-                arose.
+                <span className="view">Arabica </span>
+                coffee was first grown in Arabia, and then it began to be grown
+                in other regions, such as Egypt, Yemen and Turkey. In Yemen, for
+                example, the first coffee plantations arose.
               </p>
             </div>
             <Image
@@ -70,8 +75,10 @@ function ScrollSection() {
             <div className="scroll-section-text">
               <h3>Spread to Europe and the world</h3>
               <p>
-                In the <span>17th</span> century, Europeans began to actively
-                trade coffee and eventually grow it in tropical colonies. Coffee has become a popular drink in many parts of the world, and coffeehouses have become centers of social life.
+                In the <span className="view">17th</span> century, Europeans began to actively
+                trade coffee and eventually grow it in tropical colonies. Coffee
+                has become a popular drink in many parts of the world, and
+                coffeehouses have become centers of social life.
               </p>
             </div>
           </div>
@@ -80,9 +87,9 @@ function ScrollSection() {
             <div className="scroll-section-text">
               <h3>Variety development</h3>
               <p>
-                Over time, many varieties of <span>Arabica</span> coffee have
-                been created, each with unique flavor characteristics depending
-                on the growing conditions.
+                Over time, many varieties of <span className="view">Arabica </span>
+                coffee have been created, each with unique flavor
+                characteristics depending on the growing conditions.
               </p>
             </div>
             <video src="/coffee_2.mp4" loop autoPlay muted></video>

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Bebas_Neue, Dancing_Script } from "next/font/google";
@@ -30,7 +31,9 @@ const Hero = () => {
           <video ref={videoRef} src="/coffee_3.mp4" loop autoPlay muted />
           <div className="video-copy">
             <h1 ref={textRef} className={bebas.className}>
-              Arabica
+              <span className="view">
+                Arabica
+              </span>
             </h1>
           </div>
           <h2 ref={textRef} className={dancingScript.className}>
