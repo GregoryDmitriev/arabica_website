@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
 
 const TextReveal = () => {
   const useArrayRef = () => {
@@ -11,7 +10,7 @@ const TextReveal = () => {
     return [lettersRef, (ref) => ref && lettersRef.current.push(ref)];
   };
 
-  const [lettersRef, setlettersRef] = useArrayRef();
+  const [lettersRef, setLettersRef] = useArrayRef();
   const triggerRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -46,7 +45,7 @@ const TextReveal = () => {
           <div ref={triggerRef}>
             <span className="view">
               {text.split("").map((letter, index) => (
-                <span className="reveal-text" key={index} ref={setlettersRef}>
+                <span className="reveal-text" key={index} ref={setLettersRef}>
                   {letter}
                 </span>
               ))}

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-function ScrollSection() {
+const ScrollSection = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 

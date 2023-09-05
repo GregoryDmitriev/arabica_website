@@ -4,7 +4,9 @@ import { gsap } from "gsap";
 const Cursor = () => {
   useEffect(() => {
     const cursor = document.getElementById("custom-cursor");
-    const links = document.querySelectorAll("span");
+    const spans = document.querySelectorAll("span");
+
+    gsap.set(cursor, { scale: 1, cursor: "auto" });
 
     const onMouseMove = (event) => {
       const { clientX, clientY } = event;
@@ -12,8 +14,8 @@ const Cursor = () => {
     };
 
     const onMouseEnterLink = (event) => {
-      const link = event.target;
-      if (link.classList.contains("view")) {
+      const span = event.target;
+      if (span.classList.contains("view")) {
         gsap.to(cursor, { scale: 4 });
       } else {
         gsap.to(cursor, { scale: 4 });
@@ -25,9 +27,9 @@ const Cursor = () => {
     };
 
     document.addEventListener("mousemove", onMouseMove);
-    links.forEach((link) => {
-      link.addEventListener("mouseenter", onMouseEnterLink);
-      link.addEventListener("mouseleave", onMouseLeaveLink);
+    spans.forEach((span) => {
+      span.addEventListener("mouseenter", onMouseEnterLink);
+      span.addEventListener("mouseleave", onMouseLeaveLink);
     });
   }, []);
 

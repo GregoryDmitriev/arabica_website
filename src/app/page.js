@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import ScrollSection from "@/components/ScrollSection";
 import TextReveal from "@/components/TextReveal";
 import Cursor from "@/components/Cursor";
+import Offices from "@/components/Offices";
 
 const Home = () => {
   useEffect(() => {
@@ -20,7 +21,8 @@ const Home = () => {
       <Cursor/>
       <Hero />
       <ScrollSection />
-      <TextReveal />
+      <TextReveal /> 
+      <Offices/>
       <Footer />
     </>
   );
