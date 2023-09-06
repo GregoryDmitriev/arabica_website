@@ -14,6 +14,8 @@ body,
   --backgroundColor: #282829;
   --primaryColor: #0aa1ff;
   --primaryTextColor: #e6e6e6;
+  --colorRed: #ff0000;
+  --colorWhite: #fff;
 
   --headlineBig: clamp(3rem, 10vw, 15rem);
   --headlineSmall: clamp(1rem, 1.2vw, 6rem);
@@ -50,7 +52,7 @@ a {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #fff;
+  background-color: var(--colorWhite);
 }
 
 .hero__header {
@@ -80,7 +82,7 @@ a {
 
 .hero__header h2 span {
   font-size: 50px;
-  color: #ff0000;
+  color: var(--colorRed);
   position: relative;
   left: -20px;
 }
@@ -154,11 +156,11 @@ a {
 
 .scroll-section p {
   font-size: 30px;
-  color: #fff;
+  color: var(--colorWhite);
 }
 
 .scroll-section span {
-  color: #ff0000;
+  color: var(--colorRed);
 }
 .scroll-section video {
   width: 500px;
@@ -241,14 +243,14 @@ a {
 
 .content-offices p {
   font-size: 30px;
-  color: #fff;
+  color: var(--colorWhite);
   padding-right: 40px;
 }
 
 .content-offices span,
 .city,
 .city:hover {
-  color: #ff0000;
+  color: var(--colorRed);
 }
 
 .city {
@@ -268,7 +270,7 @@ a {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #ff0000;
+  background-color: var(--colorRed);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -303,8 +305,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  stroke: #ff0000;
-  fill: #fff;
+  stroke: var(--colorRed);
+  fill: var(--colorWhite);
   stroke-width: 1;
   stroke-dasharray: 250;
   stroke-dashoffset: -250;
@@ -320,11 +322,11 @@ a {
 
 .copyright {
   font-size: 14px;
-  color: #fff;
+  color: var(--colorWhite);
   padding-bottom: 20px;
 }
 
 .copyright span,
 .footer-text span {
-  color: #ff0000;
+  color: var(--colorRed);
 }
