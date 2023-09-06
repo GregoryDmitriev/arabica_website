@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ScrollSection from "@/components/ScrollSection";
@@ -10,19 +8,13 @@ import Cursor from "@/components/Cursor";
 import Offices from "@/components/Offices";
 
 const Home = () => {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
   return (
     <>
-      <Cursor/>
+      <Cursor />
       <Hero />
       <ScrollSection />
-      <TextReveal /> 
-      <Offices/>
+      <TextReveal />
+      <Offices />
       <Footer />
     </>
   );
