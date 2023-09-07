@@ -50,7 +50,7 @@ const ScrollSection = () => {
                 use of coffee beans.
               </p>
             </div>
-            <video src="/herdsman.mp4" loop autoPlay muted></video>
+            <video src="/herdsman.webm" loop autoPlay muted></video>
           </div>
           <div className="scroll-section">
             <div className="scroll-section-text">
@@ -92,7 +92,7 @@ const ScrollSection = () => {
                 characteristics depending on the growing conditions.
               </p>
             </div>
-            <video src="/coffee_2.mp4" loop autoPlay muted></video>
+            <video src="/coffee_2.webm" loop autoPlay muted></video>
           </div>
         </div>
       </div>

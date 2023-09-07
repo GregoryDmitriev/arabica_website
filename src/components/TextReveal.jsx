@@ -37,6 +37,7 @@ const TextReveal = () => {
   return (
     <>
       <div className="reveal">
+       
         <div className="reveal-inner">
           <div className="box-earth">
             <div className="earth"></div>

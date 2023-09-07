@@ -28,7 +28,7 @@ const Hero = () => {
     <>
       <header className="hero__header">
         <div ref={triggerRef} className="video-section">
-          <video ref={videoRef} src="/coffee_3.mp4" loop autoPlay muted />
+          <video ref={videoRef} src="/coffee_3.webm" loop autoPlay muted />
           <div className="video-copy">
             <h1 ref={textRef} className={bebas.className}>
               <span className="view">Arabica</span>

@@ -35,7 +35,7 @@ const Offices = () => {
         <video
           className="video-offices"
           ref={videoRef}
-          src="/Kioto.mp4"
+          src="/Kioto.webm"
           loop
           autoPlay
           muted
