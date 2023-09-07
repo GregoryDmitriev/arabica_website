@@ -31,9 +31,7 @@ const Hero = () => {
           <video ref={videoRef} src="/coffee_3.mp4" loop autoPlay muted />
           <div className="video-copy">
             <h1 ref={textRef} className={bebas.className}>
-              <span className="view">
-                Arabica
-              </span>
+              <span className="view">Arabica</span>
             </h1>
           </div>
           <h2 ref={textRef} className={dancingScript.className}>
